@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"whjsender\startup_stm32f103xb.o"
+"whjsender\main.o"
+"whjsender\stm32f1xx_it.o"
+"whjsender\stm32f1xx_hal_msp.o"
+"whjsender\stm32f1xx_hal_gpio_ex.o"
+"whjsender\stm32f1xx_hal_tim.o"
+"whjsender\stm32f1xx_hal_tim_ex.o"
+"whjsender\stm32f1xx_hal.o"
+"whjsender\stm32f1xx_hal_rcc.o"
+"whjsender\stm32f1xx_hal_rcc_ex.o"
+"whjsender\stm32f1xx_hal_gpio.o"
+"whjsender\stm32f1xx_hal_dma.o"
+"whjsender\stm32f1xx_hal_cortex.o"
+"whjsender\stm32f1xx_hal_pwr.o"
+"whjsender\stm32f1xx_hal_flash.o"
+"whjsender\stm32f1xx_hal_flash_ex.o"
+"whjsender\stm32f1xx_hal_exti.o"
+"whjsender\system_stm32f1xx.o"
+--strict --scatter "whjSender\whjSender.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "whjSender.map" -o whjSender\whjSender.axf

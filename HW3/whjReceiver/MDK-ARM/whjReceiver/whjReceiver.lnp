@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"whjreceiver\startup_stm32f103xb.o"
+"whjreceiver\main.o"
+"whjreceiver\stm32f1xx_it.o"
+"whjreceiver\stm32f1xx_hal_msp.o"
+"whjreceiver\stm32f1xx_hal_gpio_ex.o"
+"whjreceiver\stm32f1xx_hal_tim.o"
+"whjreceiver\stm32f1xx_hal_tim_ex.o"
+"whjreceiver\stm32f1xx_hal.o"
+"whjreceiver\stm32f1xx_hal_rcc.o"
+"whjreceiver\stm32f1xx_hal_rcc_ex.o"
+"whjreceiver\stm32f1xx_hal_gpio.o"
+"whjreceiver\stm32f1xx_hal_dma.o"
+"whjreceiver\stm32f1xx_hal_cortex.o"
+"whjreceiver\stm32f1xx_hal_pwr.o"
+"whjreceiver\stm32f1xx_hal_flash.o"
+"whjreceiver\stm32f1xx_hal_flash_ex.o"
+"whjreceiver\stm32f1xx_hal_exti.o"
+"whjreceiver\stm32f1xx_hal_uart.o"
+"whjreceiver\system_stm32f1xx.o"
+--strict --scatter "whjReceiver\whjReceiver.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "whjReceiver.map" -o whjReceiver\whjReceiver.axf
